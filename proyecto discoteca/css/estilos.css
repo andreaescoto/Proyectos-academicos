@@ -1,0 +1,357 @@
+/* Login */
+.login-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #4a4a4a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 450px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.login-error {
+    color: #ff6b6b;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.login-label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 12px 0 6px;
+}
+
+.login-input {
+    width: 95%; 
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: border-color 0.3s;
+    outline: none;
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.login-input:focus {
+    border: 2px solid #ff6b6b;
+}
+
+.login-input::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.login-button {
+    width: 95%;
+    padding: 14px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+    background: #ff3b3b;
+    transform: scale(1.05);
+}
+
+
+.admin-body {
+    font-family: Arial, sans-serif;
+    background: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Cabecera como banner */
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden; 
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+header a {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    background: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2a2a2a;
+    padding: 10px;
+}
+
+nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+.seccion {
+    display: none;
+}
+
+.seccion.active {
+    display: block;
+}
+
+.seccion a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para las tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #252525;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    height: auto;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #333;
+    align-self: center;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #ddd;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.card-content .bio {
+    flex-grow: 1; 
+    text-align: justify;
+    font-size: 12px;
+    color: #eee;
+    max-height: none;
+    overflow: visible;
+    white-space: normal;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #555;
+    background-color: #222;
+}
+
+.acciones img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    filter: invert(1);
+    background: none;
+}
+
+a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    filter: invert(1);
+    background: none;
+}
+
+/* Tabla de canciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #2a2a2a;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #555;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+}
+
+/* Formularios de agregar y editar */
+.agregar-body, .editar-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #4a4a4a);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.agregar-container, .editar-container {
+    background-color: #252525;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 450px;
+    color: white;
+}
+
+.agregar-label, .editar-label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.agregar-input, .editar-input, .agregar-textarea, .editar-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.agregar-input:focus, .editar-input:focus, .agregar-textarea:focus, .editar-textarea:focus {
+    background-color: white;
+    color: black;
+    border-color: #007bff;
+    outline: none;
+}
+
+.agregar-boton, .editar-boton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.agregar-boton:hover, .editar-boton:hover {
+    background-color: #0056b3;
+}
+
+.agregar-enlace, .editar-enlace {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.agregar-enlace:hover, .editar-enlace:hover {
+    text-decoration: underline;
+}
